@@ -2,8 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-#8265bd1679663a7ea12ac168da84d2e8
-#https://api.themoviedb.org/3/movie/%7Bmovie_id%7D?api_key=%3C%3Capi_key%3E%3E&language=en-US
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
     distances = similarity[movie_index]
